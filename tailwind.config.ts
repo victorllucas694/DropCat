@@ -9,8 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'almost-black': '#212121',
+        'custom-black': '#181818',
+        'card-button': 'rgb(40, 40, 40)',
+        'button-card': 'rgb(60, 60, 60)',
+        'button-header': 'rgb(60, 60, 60)',
+        'custom-green': '#10B981',
+        'custom-yellow': '#F59E0B',
+      },
+      fontFamily: {
+        alfa: ["Alfa Slab One", "cursive"],
+        roboto: ["Roboto"],
       },
     },
   },
