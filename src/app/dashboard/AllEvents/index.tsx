@@ -85,7 +85,7 @@ export default function AllEvents() {
 	return (
 		<div className="p-6 w-full mx-auto bg-almost-black">
 			<header className="bg-almost-black flex items-center gap-4 mb-6 pb-4">
-				<Search className="w-5 h-5 bg-almost-black" />
+				<Search className="w-5 h-5 text-gray-200" />
 				<input
 					type="text"
 					placeholder="Encontre eventos"
@@ -98,7 +98,7 @@ export default function AllEvents() {
 					Criar Evento
 				</button>
 			</header>
-			<h1 className="text-2xl font-bold mb-4">Eventos criados recentemente</h1>
+			<h1 className="text-2xl font-bold mb-4 text-gray-200">Eventos criados recentemente</h1>
 			<div className="grid mt-10 grid-cols-1 md:grid-cols-2 bg-almost-black lg:grid-cols-3 gap-4">
 				{filteredPosts.map((post) => (
 					<Card key={post.id}>
@@ -107,7 +107,7 @@ export default function AllEvents() {
 							alt={post.title}
 							className="w-full object-cover rounded-md"
 						/>
-						<h2 className="text-lg mt-8 font-alfa font-semibold mt-2">
+						<h2 className="text-lg text-gray-200 mt-8 font-alfa font-semibold mt-2">
 							{post.title}
 						</h2>
 						<p className="text-gray-300 mt-2">{post.content}</p>

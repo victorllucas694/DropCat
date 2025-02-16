@@ -28,7 +28,7 @@ export default function AllEvents() {
       id: 1,
       title: "Documento de Planejamento",
       link: "https://exemplo.com/documento1",
-      description: "Este documento contém o planejamento estratégico para o próximo trimestre.",
+      description: "Este documento contém o planejamento estratégico.",
       preview: "Planejamento estratégico focado em crescimento de mercado...",
     },
     {
@@ -50,7 +50,7 @@ export default function AllEvents() {
   return (
     <div className="p-6 w-full mx-auto bg-almost-black">
       <header className="bg-almost-black flex items-center gap-4 mb-6 pb-4">
-        <Search className="w-5 h-5 bg-almost-black" />
+        <Search className="w-5 h-5 text-gray-200" />
         <input
           type="text"
           placeholder="Encontre eventos"
@@ -63,11 +63,11 @@ export default function AllEvents() {
           Criar Evento
         </button>
       </header>
-      <h1 className="text-2xl font-bold mb-4">Documentos adicionados</h1>
+      <h1 className="text-2xl font-bold mb-4 text-gray-200">Documentos adicionados</h1>
       <div className="grid mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {documents.map((doc) => (
           <Card key={doc.id}>
-            <h2 className="text-xl font-semibold mb-2">{doc.title}</h2>
+            <h2 className="text-xl font-semibold text-gray-200 mb-2">{doc.title}</h2>
             <p className="text-sm text-gray-300 mb-4">{doc.description}</p>
             <p className="text-sm text-gray-400 mb-4">{doc.preview}</p>
             <a

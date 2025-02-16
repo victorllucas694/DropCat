@@ -28,46 +28,41 @@ const Dashboard: React.FC = () => {
 				</h1>
 				<nav className="space-y-3">
 					{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-<p
-						className={`block p-3 font-roboto rounded-md ${
-							activeComponent === "AllEvents" ? "bg-almost-black" : ""
-						}`}
+					<p
+						className={`block p-3 font-roboto rounded-md ${activeComponent === "AllEvents" ? "bg-almost-black" : ""
+							}`}
 						onClick={() => setActiveComponent("AllEvents")}
 					>
 						Todos os eventos
 					</p>
 					{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-<p
-						className={`block p-3 font-roboto rounded-md ${
-							activeComponent === "MyDocuments" ? "bg-almost-black" : ""
-						}`}
+					<p
+						className={`block p-3 font-roboto rounded-md ${activeComponent === "MyDocuments" ? "bg-almost-black" : ""
+							}`}
 						onClick={() => setActiveComponent("MyDocuments")}
 					>
 						Meus documentos
 					</p>
 					{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-<p
-						className={`block p-3 font-roboto rounded-md ${
-							activeComponent === "Travels" ? "bg-almost-black" : ""
-						}`}
+					<p
+						className={`block p-3 font-roboto rounded-md ${activeComponent === "Travels" ? "bg-almost-black" : ""
+							}`}
 						onClick={() => setActiveComponent("Travels")}
 					>
 						Viagens
 					</p>
 					{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-<p
-						className={`block p-3 font-roboto rounded-md ${
-							activeComponent === "Shared" ? "bg-almost-black" : ""
-						}`}
+					<p
+						className={`block p-3 font-roboto rounded-md ${activeComponent === "Shared" ? "bg-almost-black" : ""
+							}`}
 						onClick={() => setActiveComponent("Shared")}
 					>
 						Compartilhados
 					</p>
 					{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-<p
-						className={`block p-3 font-roboto rounded-md ${
-							activeComponent === "Others" ? "bg-almost-black" : ""
-						}`}
+					<p
+						className={`block p-3 font-roboto rounded-md ${activeComponent === "Others" ? "bg-almost-black" : ""
+							}`}
 						onClick={() => setActiveComponent("Others")}
 					>
 						Outros
